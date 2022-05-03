@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZen</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="homie.css">
+
+    
+</head>
+<body>
+
+    <!-- header section starts  -->
+
+<header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><i class="fas fa-user-graduate"></i>STEPUP!</a>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <!-- <li><a href="#course">course</a></li> -->
+            <!-- <li>
+                <a href="#">Courses</a> -->
+                <!-- <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Coud Computing</a></li>
+                  <li><a href="#">IT & Software</a></li>
+                  <li class="more">
+                    <span><a href="#">More</a>
+                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                  </span>
+                    <ul class="more-sub-menu sub-menu">
+                      <li><a href="#">Business</a></li>
+                      <li><a href="#">Finances</a></li>
+                      <li><a href="#">Design</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>-->
+           
+
+              <!-- <li>
+                <a href="#">Features
+                <i class="fas fa-caret-down"></i>
+                </a>
+                <ul>
+                   <li><a href="#">Python</a></li>
+                   <li><a href="#">JQuery</a></li>
+                   <li><a href="#">Javascript</a></li>
+                </ul>
+             </li> -->
+             <li>
+                <a href="#">Courses
+                <i class="fas fa-caret-down"></i>
+                </a>
+                <ul>
+                   <li><a href="#">Web Development</a></li>
+                   <li><a href="#">IT & Software</a></li>
+                   <li>
+                      <a href="#">Others
+                      <i class="fas fa-caret-right"></i>
+                      </a>
+                      <ul>
+                         <li><a href="#">Business</a></li>
+                         <li><a href="#">Finances</a></li>
+                      </ul>
+                   </li>
+                </ul>
+             </li>
+
+            <li><a href="#teacher">teacher</a></li>
+            <li><a href="#contact">contact</a></li> 
+            <li><a href="#">login</a></li>
+            <!-- <li><a href="#">Sign up</a></li> -->
+            <div class="btns">
+                <!-- <a href="#">Login</a> -->
+                <a href="sign.html">Sign Up</a>
+             </div>
+            <script>
+                const buttons = document.querySelectorAll("a");
+                buttons.forEach((button) => {
+                  button.onclick = function(e){
+                    let x = e.clientX - e.target.offsetLeft;
+                    let y = e.clientY - e.target.offsetTop;
+                    let ripple = document.createElement("span");
+                    ripple.style.left = `${x}px`;
+                    ripple.style.top = `${y}px`;
+                    this.appendChild(ripple);
+                    setTimeout(function(){
+                      ripple.remove();
+                    }, 600); // 1second = 1000ms
+                  }
+                });
+                
+             </script>
+        </ul>
+    </nav>
+
+    <!-- <div id="login" class="fas fa-user-circle"></div> -->
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form  -->
+
+<!-- <div class="login-form">
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" placeholder="username" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+        <input type="submit" class="btn" value="login">
+        <i class="fas fa-times"></i>
+    </form>
+
+</div> -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <h1>Learn from home</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum neque aliquid similique error velit placeat vitae accusantium est nam magnam?</p>
+    <a href="https://www.udemy.com/" target="_blank"><button class="btn">get started</button></a>
+
+    <div class="shape"></div>
+
+</section>
+
+<!-- home section ends -->
+
+    <!-- course section starts  -->
+
+<section class="course" id="course">
+
+    <!-- <h1 class="heading">our popular courses</h1>     -->
+    <h1 class="heading"> Our popular <span>Courses</span> </h1>
+    <div class="box-container">
+    
+        <div class="box">
+            <img src="cor1.jpg" alt="">
+            <h3 class="price">50₹</h3>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <a href="frontp.html" target="_blank" class="title">Learn Front-End Development</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Modi quos excepturi id quibusdam? Molestiae quis nihil non debitis!</p>
+                <!-- <div class="card__link container__center">
+                    <a href="#">Enroll Now</a>
+                </div> -->
+                <div class="info">
+                    <h3> <i class="far fa-clock"></i> 2 hours </h3>
+                    <h3> <i class="far fa-calendar-alt"></i> 6 months </h3>
+                    <h3> <i class="fas fa-book"></i> 12 modules </h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="cor2.png" alt="">
+            <h3 class="price">50₹</h3>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <a href="frontp.html" target="_blank" class="title">Learn Back-End Development</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Modi quos excepturi id quibusdam? Molestiae quis nihil non debitis!</p>
+                <div class="info">
+                    <h3> <i class="far fa-clock"></i> 2 hours </h3>
+                    <h3> <i class="far fa-calendar-alt"></i> 6 months </h3>
+                    <h3> <i class="fas fa-book"></i> 12 modules </h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="cor3.jpg" alt="">
+            <h3 class="price">50₹</h3>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <a href="frontp.html" target="_blank" class="title">Learn Full-Stack Development</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Modi quos excepturi id quibusdam? Molestiae quis nihil non debitis!</p>
+                <div class="info">
+                    <h3> <i class="far fa-clock"></i> 2 hours </h3>
+                    <h3> <i class="far fa-calendar-alt"></i> 6 months </h3>
+                    <h3> <i class="fas fa-book"></i> 12 modules </h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="cor4.png" alt="">
+            <h3 class="price">50₹</h3>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <a href="frontp.html" target="_blank" class="title">Learn Cloud-Computing</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Modi quos excepturi id quibusdam? Molestiae quis nihil non debitis!</p>
+                <div class="info">
+                    <h3> <i class="far fa-clock"></i> 2 hours </h3>
+                    <h3> <i class="far fa-calendar-alt"></i> 6 months </h3>
+                    <h3> <i class="fas fa-book"></i> 12 modules </h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="courses5.jfif" alt="">
+            <h3 class="price">50₹</h3>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <a href="frontp.html" target="_blank" class="title">Learn AI/ML</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Modi quos excepturi id quibusdam? Molestiae quis nihil non debitis!</p>
+                <div class="info">
+                    <h3> <i class="far fa-clock"></i> 2 hours </h3>
+                    <h3> <i class="far fa-calendar-alt"></i> 6 months </h3>
+                    <h3> <i class="fas fa-book"></i> 12 modules </h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="cor5.jfif" alt="">
+            <h3 class="price">50₹</h3>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <a href="frontp.html" target="_blank" class="title">Learn Andriod Development</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Modi quos excepturi id quibusdam? Molestiae quis nihil non debitis!</p>
+                <div class="info">
+                    <h3> <i class="far fa-clock"></i> 2 hours </h3>
+                    <h3> <i class="far fa-calendar-alt"></i> 6 months </h3>
+                    <h3> <i class="fas fa-book"></i> 12 modules </h3>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    </section>
+    
+    <!-- course section ends -->
+
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="about.png" alt="">
+        </div>
+    
+        <div class="content">
+            <h2 class="heading"> Why <span>Choose Us?</span> </h2>
+            <p>Learning that gets you</p>
+            <p>Skills for your present (and your future). Get started with us.</p>
+            <a href="https://www.udemy.com/" target="_blank"><button class="btn">Know more..</button></a>
+        </div>
+    
+    </section>
+
+
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h2 class="heading"> #Trending <span>Categories</span> </h2>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+            <a href="https://www.udemy.com/" target="_blank" class="btn">25 modules</a>
+        </div>
+
+        <div class="box">
+            <i class="fab fa-hive"></i>
+            <h3>Data Science</h3>
+            <a href="https://www.udemy.com/" target="_blank" class="btn">18 modules</a>
+        </div>
+
+        <div class="box">
+            <i class="fab fa-java"></i>
+            <h3>Java</h3>
+            <a href="https://www.udemy.com/" target="_blank" class="btn">12 modules</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-server"></i>
+            <h3>Cyber Security</h3>
+            <a href="https://www.udemy.com/" target="_blank" class="btn">32 modules</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-laptop"></i>
+            <h3>Cloud Computing</h3>
+            <a href="https://www.udemy.com/" target="_blank"class="btn">16 modules</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-database"></i>
+            <h3>Analysis of Algorithms</h3>
+            <a href="https://www.udemy.com/" target="_blank" class="btn">29 modules</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-robot"></i>
+            <h3>Robots</h3>
+            <a href="https://www.udemy.com/" target="_blank" class="btn">8 modules</a>
+        </div>
+
+        <div class="box">
+            <i class="fab fa-android"></i>
+            <h3>Andriod Development</h3>
+            <a href="https://www.udemy.com/" target="_blank" class="btn">11 modules</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+
+<section class="contact" id="contact">
+
+    <div class="image">
+        <img src="background.jpg" alt="">
+    </div>
+
+    <form action="">
+        <h3>contact us</h3>
+        <input type="text" placeholder="your name" class="box">
+        <input type="email" placeholder="your email" class="box">
+        <input type="tumber" placeholder="your number" class="box">
+        <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+</section>
+
+
+<!-- teacher section starts  -->
+
+<section class="teacher" id="teacher">
+
+    <div class="image">
+        <img src="teach.png" alt="">
+    </div>
+
+    <div class="content">
+        <h2 class="heading"> Become An <span>Instructor</span> </h2>
+        <p>Learning that gets you</p>
+        <p>Skills for your present (and your future). Get started with us.</p>
+        <a href="#" target="_blank"><button class="btn">Join Us</button></a>
+    </div>
+    
+    </section>
+    
+    <!-- teacher section ends -->
+
+
+
+<section class="footer">
+
+    <img src="top_wave.png" alt="">
+
+    <div class="share">
+        <a href="#" class="btn"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="#" class="btn"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="#" class="btn"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="#" class="btn"> <i class="fab fa-linkedin"></i> linkedin </a>
+        <a href="#" class="btn"> <i class="fab fa-pinterest"></i> pinterest </a>
+    </div>
+
+    
+    <div class="credit"> created by <span> Team Zeroed </span> | all rights reserved! </div>
+
+</section>
+
+
+<!-- custom js file link  -->
+<script src="front.js"></script>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</body>
+</html>

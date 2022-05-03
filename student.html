@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StepUp!</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="student.css">
+
+      <!-- header section starts  -->
+
+<header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><i class="fas fa-student"></i>Student Dashboard</a>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+             <li>
+                <a href="#">Courses
+                <i class="fas fa-caret-down"></i>
+                </a>
+                <ul>
+                   <li><a href="#">Web Development</a></li>
+                   <li><a href="#">IT & Software</a></li>
+                   <li>
+                      <a href="#">Others
+                      <i class="fas fa-caret-right"></i>
+                      </a>
+                      <ul>
+                         <li><a href="#">Business</a></li>
+                         <li><a href="#">Finances</a></li>
+                      </ul>
+                   </li>
+                </ul>
+             </li>
+
+            <li><a href="#teacher">teacher</a></li>
+            <li><a href="#contact">contact</a></li> 
+            <li><a href="#">login</a></li>
+            <!-- <li><a href="#">Sign up</a></li> -->
+            <div class="btns">
+                <!-- <a href="#">Login</a> -->
+                <a href="sign.html">Sign Up</a>
+             </div>
+            <script>
+                const buttons = document.querySelectorAll("a");
+                buttons.forEach((button) => {
+                  button.onclick = function(e){
+                    let x = e.clientX - e.target.offsetLeft;
+                    let y = e.clientY - e.target.offsetTop;
+                    let ripple = document.createElement("span");
+                    ripple.style.left = `${x}px`;
+                    ripple.style.top = `${y}px`;
+                    this.appendChild(ripple);
+                    setTimeout(function(){
+                      ripple.remove();
+                    }, 600); // 1second = 1000ms
+                  }
+                });
+                
+             </script>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <h1>Learn from home</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum neque aliquid similique error velit placeat vitae accusantium est nam magnam?</p>
+    <a href="https://www.udemy.com/" target="_blank"><button class="btn">get started</button></a>
+
+    <div class="shape"></div>
+
+</section>
+
+<!-- home section ends -->
+
+</head>
+<body>
